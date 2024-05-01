@@ -20,6 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AI\Agent\Agent.cpp" />
+    <ClCompile Include="AI\State\AgentState\Idle.cpp" />
+    <ClCompile Include="AI\State\AgentState\Talking.cpp" />
+    <ClCompile Include="AI\State\StateMachine.cpp" />
+    <ClCompile Include="Core\Message\MessageDispatcher.cpp" />
     <ClCompile Include="Core\stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
@@ -30,6 +34,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI\Agent\Agent.h" />
+    <ClInclude Include="AI\State\AgentState\Idle.h" />
+    <ClInclude Include="AI\State\AgentState\Talking.h" />
+    <ClInclude Include="AI\State\State.h" />
+    <ClInclude Include="AI\State\StateMachine.h" />
+    <ClInclude Include="Core\Message\Listener.h" />
+    <ClInclude Include="Core\Message\Message.h" />
+    <ClInclude Include="Core\Message\MessageDispatcher.h" />
+    <ClInclude Include="Core\Message\MessageHandler.h" />
+    <ClInclude Include="Core\Singleton.h" />
     <ClInclude Include="Core\stdafx.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -85,16 +98,18 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero\Core;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\external\Optick_1.4.0\include;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\external\Visual Leak Detector\include;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero\Core;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\external\Optick_1.4.0\lib\x64\debug;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\external\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero\Core;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero\Core;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero\Core;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\external\Optick_1.4.0\include;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\external\Visual Leak Detector\include;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero\Core;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\external\Optick_1.4.0\lib\x64\debug;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\external\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero\Core;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero;C:\Users\gaetan.soppe\Documents\GitHub\Zero2Hero\internal\AIProg_Zero2Hero\AIProg_Zero2Hero\Core;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

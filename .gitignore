@@ -34,3 +34,5 @@
 /internal/AIProg_Zero2Hero/AIProg_Zero2Hero/x64
 /internal/AIProg_Zero2Hero/x64
 *.user
+*.pdb
+*.manifest

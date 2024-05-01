@@ -13,6 +13,12 @@
     <Filter Include="AI\State">
       <UniqueIdentifier>{61d7ed33-ebe0-4908-85ef-cb86b34b5248}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AI\State\AgentState">
+      <UniqueIdentifier>{3463c9f5-6297-4a3d-b63f-f06d1c6e86df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Message">
+      <UniqueIdentifier>{75282952-f1e9-4855-8a02-330ba39d3b13}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
@@ -22,6 +28,18 @@
     <ClCompile Include="Core\stdafx.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="AI\State\StateMachine.cpp">
+      <Filter>AI\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Message\MessageDispatcher.cpp">
+      <Filter>Core\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\State\AgentState\Idle.cpp">
+      <Filter>AI\State\AgentState</Filter>
+    </ClCompile>
+    <ClCompile Include="AI\State\AgentState\Talking.cpp">
+      <Filter>AI\State\AgentState</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI\Agent\Agent.h">
@@ -29,6 +47,33 @@
     </ClInclude>
     <ClInclude Include="Core\stdafx.h">
       <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\State\State.h">
+      <Filter>AI\State</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\State\StateMachine.h">
+      <Filter>AI\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Singleton.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\MessageDispatcher.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\Message.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\Listener.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Message\MessageHandler.h">
+      <Filter>Core\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\State\AgentState\Idle.h">
+      <Filter>AI\State\AgentState</Filter>
+    </ClInclude>
+    <ClInclude Include="AI\State\AgentState\Talking.h">
+      <Filter>AI\State\AgentState</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
