@@ -1,2 +1,2 @@
 # Zero2Hero
- Lear AI programming for games
+ Learn AI programming for games
